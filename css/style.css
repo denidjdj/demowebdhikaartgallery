@@ -1,0 +1,1087 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+.w-full {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 320px) {
+
+    .grafis img {
+    width: 150px;
+    }
+
+    .mySwiper .swiper-button-next,.swiper-button-prev {
+        display: none;
+    }
+
+    .copyright-content a:hover {
+        font-weight: bold;
+    }
+
+    .copyright-content a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    .copyright-content .container {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .copyright-content {
+        display: block;
+    }
+
+    .copyright-content p {
+        color: white;
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .alamat {
+        padding-top: 10px;
+    }
+
+    .alamat a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    .alamat a:hover {
+    font-weight: bold;
+    }
+        
+    #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: all 0.3s;
+    }
+
+    #backToTop:hover {
+    opacity: 1;
+    }
+
+   .whatsapp-float {
+    position: fixed;
+    bottom: 18px;
+    left: 20px;
+    z-index: 999;
+    }
+
+/* Tombol bulat */
+    .wa-button {
+    display: flex;
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 50px; /* default hanya bulat */
+    transition: width 0.3s ease;
+    }
+
+    /* Ikon WhatsApp */
+    .wa-button img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    }
+
+    /* Label: tersembunyi */
+    .wa-label {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    }
+
+    /* Saat hover: label muncul, tombol melebar */
+    .wa-button:hover {
+    width: 300px;
+    }
+
+    .wa-button:hover .wa-label {
+    opacity: 1;
+    }
+    section.hubungi-kami {
+    padding-bottom: 50px;
+    }
+
+    .swiper.swiper-artikel {
+    height: 630px;
+    }
+
+    .swiper.swiper-galeri {
+    height: 560px;
+    }
+
+    .btn-hubungi-kami i {
+    font-size: 20px;
+    }
+
+    .btn-hubungi-kami {
+    padding-top: 30px;
+    }
+
+    .btn-white {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 7px 16px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .btn-white:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        color: rgb(28, 192, 28);
+        border: 2px solid rgb(28, 192, 28);
+    }
+
+    .background {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+    }
+
+    .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    /* Overlay transparan */
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+    z-index: 1;
+    }
+
+    /* Konten di atas overlay */
+    .konten {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    }
+
+    .meta p {
+    font-weight: 600;
+    color: #ae6846;
+    padding-top: 5px;
+    }
+
+    .img-artikel {
+    overflow: hidden;
+    border-radius: 10px;
+    }
+
+    .img-artikel img {
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .img-artikel img:hover {
+        transform: scale(1.1);
+    }
+
+    .wraper-artikel h3 {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    }
+
+    .wraper-artikel {
+    box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 18px;
+}
+
+    .swiper .swiper-pagination-bullet-active {
+    background: #ae6846;
+    }
+
+    .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #ae6846;
+    opacity: 1;
+    margin-right: 10px;
+    margin-top: 50px;
+    }
+
+    .mySwiper .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+    margin-right: 10px;
+    margin-top: 50px;
+    }
+
+    .mySwiper .swiper-pagination-bullet-active {
+    background: #ae6846;
+    }
+
+    .swiper.swiper-klien {
+    height: 120px;
+    }
+
+    section.klien-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    .wraper-img {
+    overflow: hidden;      
+    border-radius: 10px;
+    }
+
+    .wraper-img img {
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+    }
+
+
+.wraper-img img:hover {
+    transform: scale(1.1);
+    }
+
+    .produk-item img {
+    border-radius: 10px;
+    }
+
+    .produk-item p {
+    padding: 5px;
+    margin: 10px;
+    }
+
+    .produk-item h3 {
+    padding: 10px;
+    margin: 5px;
+    }
+
+    section.produk-section {
+    width: 100%;
+    }
+
+    .semua-produk {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .produk-item {
+        box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 18px;
+    }
+    section.produk-section h2 {
+    color: #000;
+    }
+
+    .keunggulan__item img {
+    transition: ease-in-out 0.3s;
+    }
+
+    .keunggulan__item img:hover {
+        transform: translateY(-10px);
+    }
+
+    .keunggulan__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .keunggulan__item p {
+    padding: 10px;
+    text-align: left;
+    }
+
+    .keunggulan__item h3 {
+    text-align: center;
+    padding: 10px auto;
+    }
+
+    .keunggulan {
+    width: 90%;
+    margin: 40px auto;
+    }
+
+    .keunggulan__item {
+    box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+    margin: 5px;
+    }
+    .swiper-kegiatan .swiper-slide {
+        height: auto;
+    }
+    .item-footer {
+        padding: 15px 0;
+    }
+
+    .item-footer-1 {
+        padding-top: 0;
+        text-align: center;
+    }
+
+
+    .logo-footer {
+        width: 200px;
+    }
+
+    .item-footer h3 {
+        color: #fff;
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .item-footer h3:after {
+        content: "";
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+
+    .item-footer-2 ul {
+        list-style: none;
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    .item-footer-2 i {
+        font-size: 25px;
+        width: 35px;
+    }
+
+    .item-footer.item-footer-2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    .item-footer.item-footer-2 ul li a:hover {
+        font-weight: bold;
+    }
+
+
+    .item-footer-2 ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .item-footer-2 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 200px;
+    }
+    footer {
+        background: #1d1d1dd5 url(../img/background-footer.jpg) no-repeat center center;
+        background-blend-mode: multiply;
+        padding: 40px 10%;
+    }
+    .d-desktop {
+        display: none;
+    }
+    h2.title-section {
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .description {
+        color: #fff;
+        padding: 30px 0;
+    }
+
+    .description h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    a.btn-green {
+        background-color: #0a993c;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .button-kegiatan {
+        text-align: right;
+    }
+    h2.title-section::after {
+        content: "";
+        width: 60px;
+        height: 5px;
+        background-color: #945d4a;
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .small-text {
+        font-size: 20px;
+    }
+
+    .text-green {
+        color: #0a993c;
+    }
+
+    .text-red {
+        color: #d60000;
+    }
+
+    .infak-section-left h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .infak-section-left article {
+        margin-bottom: 20px;
+    }
+
+    .cta-infak {
+        display: block;
+        width: 100%;
+        background-color: #0a993c;
+        border: none;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .cta-infak:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    .infak-section-left {
+        margin-bottom: 30px;
+    }
+
+    .infak-section-right img {
+        width: 80%;
+    }
+
+    .infak-section-right img:last-child {
+        margin-left: auto;
+        display: block;
+        margin-top: -25px;
+    }
+
+    .video-section {
+        background-color: #262626;
+        padding: 50px 0;
+        border-top: 15px solid #0a993c;
+    }
+
+    .wrapper-video {
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+
+    .wrapper-video iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .welcome-section__left h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+    .welcome-section__left {
+        text-align: left;
+        color: #000;
+        margin-bottom: 30px;
+    }
+
+    .outer-video {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .welcome-section__left article {
+        margin: 15px 0;
+    }
+
+    .btn-brown {
+        background-color: transparent;
+        color: #a8644dec;
+        border: 2px solid #a8644dec;
+        padding: 7px 16px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .btn-brown:hover {
+        background-color: #945d4a;
+        transform: scale(1.1);
+        color: #fff;
+    }
+
+    .welcome-section__right img {
+        box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+    }
+
+    .welcome-section {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    .hero-hadits {
+        background-color: #262626;
+        color: #fff;
+        text-align: center;
+        width: 300px;
+        border-radius: 15px;
+        margin: -75px auto 0;
+        z-index: 9999;
+        position: relative;
+        padding: 28px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    .hero-hadits img {
+        position: absolute;
+        width: 37px;
+        z-index: 999999;
+    }
+
+    .quote-left {
+        top: -10px;
+        left: 18px;
+    }
+
+    .quote-right {
+        bottom: -10px;
+        right: 18px;
+    }
+
+    .d-none {
+        display: none !important;
+    }
+
+    .text-hero h6 {
+        font-weight: 400;
+    }
+
+    .mySwiper .swiper-slide:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .text-hero {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .mySwiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mySwiper .swiper-slide {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .hamburger svg {
+        width: 35px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .top-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .top-menu ul li {
+        text-align: center;
+        margin: 10px 0;
+        position: relative;
+    }
+
+    .btn-rounded-full {
+        padding: 8px 19px;
+        border-radius: 50px;
+    }
+
+    .top-menu ul li.active:before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        height: 3px;
+        background-color: #945d4a;
+        width: 30%;
+        transform: translateX(-50%);
+    }
+
+    .top-menu .btn-rounded-full {
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .bg-green {
+        background-color: #0a993c;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99999;
+        background-color: #000;
+        padding-top: 1rem !important;
+    }
+
+    .navbar {
+        position: absolute;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        }
+
+
+    .navbar.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #000; /* atau warna yang kamu mau */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-radius: 30px;
+        }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999999;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .close svg {
+        width: 30px;
+    }
+
+    .top-menu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        bottom: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        transition: 0.3s;
+    }
+
+    .wrapper-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+    }
+
+    .wrapper-popup.show {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    .close-popup {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    .content-popup {
+        color: #000;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .swiper.swiper-galeri {
+    height: 500px;
+    }
+
+    .swiper.swiper-artikel {
+    height: 630px;
+}
+    .swiper.swiper-klien {
+    height: 200px;
+    }
+
+    .produk-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .keunggulan__container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .swiper-kegiatan .swiper-slide {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .wrapper-infak-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .infak-section-left {
+        width: 50%;
+        flex-shrink: 0;
+        padding-right: 20px;
+    }
+
+    .content-popup {
+        width: 25em;
+    }
+
+    .welcome-section {
+        padding: 40px;
+    }
+
+    .hero-hadits {
+        width: 500px;
+        font-size: 14px;
+        margin: -65px auto 10px;
+    }
+
+    .mySwiper .swiper-slide {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .mySwiper .swiper-slide {
+        height: 100vh;
+        object-fit: cover;
+    }
+    footer {
+        padding: 40px 0;
+    }
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .item-footer {
+        padding: 0 15px;
+    }
+
+    .item-footer-1 {
+        display: grid;
+        place-content: center;
+    }
+    h2.title-section {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .swiper-button-next {
+        right: -60px;
+    }
+    .swiper-button-prev {
+        left: -60px;
+    }
+    .d-mobile {
+        display: none;
+    }
+    .d-desktop {
+        display: block;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .infak-section-left h2 {
+        font-size: 40px;
+    }
+
+    .infak-section-left h3 {
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 25px;
+    }
+
+    .wrapper-infak-section {
+        width: 800px;
+    }
+
+    .welcome-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .outer-video {
+        width: 700px;
+    }
+
+    .welcome-section__left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    .hero-hadits img {
+        width: 40px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .top-menu {
+        right: 0;
+        position: relative;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .top-menu ul li {
+        display: inline-block;
+        margin: 0 0 0 30px;
+    }
+
+    .close {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .item-footer-1 {
+        place-content: unset;
+        justify-content: center;
+        align-items: start;
+    }
+    .wrapper-infak-section,
+    .outer-swiper-kegiatan {
+        width: 890px;
+    }
+
+    .welcome-section {
+        padding: 60px;
+    }
+
+    .text-hero h2 {
+        font-size: 55px;
+    }
+
+    .text-hero {
+        width: 100%;
+    }
+
+    .text-hero h6 {
+        font-size: 20px;
+        line-height: 24px;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .mySwiper .swiper-slide {
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mySwiper .swiper-slide {
+        height: 100vh;
+    }
+
+    .hero-hadits {
+        font-size: 16px;
+        padding: 60px 40px;
+        width: 600px;
+    }
+
+    .hero-hadits img {
+        width: 60px;
+    }
+}

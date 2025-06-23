@@ -1,2 +1,0 @@
-# dhikaartgallery
-# dhikaartgallery
