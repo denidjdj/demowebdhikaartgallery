@@ -26,12 +26,16 @@ $(document).ready(function () {
 
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
-        speed: 1500,
-        centeredSlides: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
+        effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  speed: 1200,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

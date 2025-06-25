@@ -23,8 +23,31 @@ body {
 
 @media (min-width: 320px) {
 
-    .grafis img {
-    width: 150px;
+    iframe {
+    border-radius: 20px;
+    }
+
+    h3.diskrisi {
+    text-align: center;
+    padding-bottom: 10px;
+    }
+
+    .gambar {
+        position: relative;
+    top: 40%;
+    left: 0;
+    width: 100px;
+    height: auto;
+    animation: geserKanan 2s linear infinite;
+    z-index: 99;}
+
+    @keyframes geserKanan {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 5%;
+    }
     }
 
     .mySwiper .swiper-button-next,.swiper-button-prev {
@@ -179,7 +202,7 @@ body {
     .background {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
     }
 
@@ -651,40 +674,19 @@ body {
         display: none !important;
     }
 
-    .text-hero h6 {
-        font-weight: 400;
-    }
-
-    .mySwiper .swiper-slide:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .text-hero {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 99;
-        color: #fff;
-        text-align: center;
-        transform: translate(-50%, -50%);
-    }
-
     .mySwiper .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
     }
 
     .mySwiper .swiper-slide {
-        height: 400px;
-        object-fit: cover;
+        top: 30px;
+        position: relative;
+        width: 100%;
+        height: 235px;
     }
 
     .hamburger svg {
@@ -713,15 +715,12 @@ body {
         border-radius: 50px;
     }
 
-    .top-menu ul li.active:before {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        height: 3px;
+    .top-menu ul li.active {
         background-color: #945d4a;
-        width: 30%;
-        transform: translateX(-50%);
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        border: 2px solid #fff;    
     }
 
     .top-menu .btn-rounded-full {
@@ -749,7 +748,7 @@ body {
 
     .navbar {
         position: absolute;
-        background-color: transparent;
+        background-color: #000;
         transition: all 0.3s ease;
         }
 
@@ -911,7 +910,7 @@ body {
     }
 
     .mySwiper .swiper-slide {
-        height: 500px;
+        height: 444px;
         object-fit: cover;
     }
 }
@@ -919,7 +918,7 @@ body {
 @media (min-width: 1024px) {
 
     .mySwiper .swiper-slide {
-        height: 100vh;
+        height: 580px;
         object-fit: cover;
     }
     footer {
@@ -1072,7 +1071,7 @@ body {
 
 @media (min-width: 1400px) {
     .mySwiper .swiper-slide {
-        height: 100vh;
+        height: 810px;
     }
 
     .hero-hadits {
