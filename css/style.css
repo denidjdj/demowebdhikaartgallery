@@ -38,7 +38,7 @@ body {
     left: 0;
     width: 100px;
     height: auto;
-    animation: geserKanan 2s linear infinite;
+    animation: geserKanan 3s linear infinite;
     z-index: 99;}
 
     @keyframes geserKanan {
